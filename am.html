@@ -43,24 +43,23 @@
 
       .title {
         font-family: "Uncial Antiqua", system-ui;
-        color: #a3b895;
+        color: #968442;
       }
 
       #hoho {
-        color: white;
         font-family: "Julius Sans One", sans-serif;
         font-size: 20px;
-        color: #a3b895;
+        color: #ad9d63;
       }
 
       h1 {
-        color: ##f7f7f2;
+        color: #968442;
         font-weight: 1;
         font-style: normal;
         font-size: 50px;
         letter-spacing: 3px;
         word-spacing: 3px;
-        color: #f7f7f2;
+        color: #968442;
         font-weight: 100;
         font-style: normal;
         font-variant: normal;
@@ -72,9 +71,21 @@
         width: 100%;
       }
 
-      #divider1 {
+      .divider1 {
         width: 450px;
+        filter: opacity(50%);
+        mix-blend-mode: multipy;
       }
+      
+      
+      .kissyfish { animation: mymove 5s infinite;
+         position: relative;
+      }
+      
+      @keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
 
       table,
       th,
@@ -83,7 +94,9 @@
         border: 1px solid;
         border-collapse: collapse;
         color: #a3b895;
-        border-radius: 10px;
+        border-radius: 50px;
+        font-family: "Julius Sans One", sans-serif;
+        
       }
     </style>
   </head>
@@ -97,7 +110,7 @@
       <br />
 
       <img
-        id="divider1"
+        class="divider1"
         src="https://64.media.tumblr.com/6dd2656a89f41ad7531412d7033c7c1f/4ad239c14967179b-cc/s250x400/fc59bd42e82d57108c85ab6d00885ddd7715ce5b.gifv"
       />
 
@@ -128,7 +141,8 @@
           <td>glub glub</td>
           <td>
             <img
-              src="https://media.tenor.com/WGvvznDuGCkAAAAM/kissing-fish.gif"
+                 class= "kissyfish"
+              src="https://media.tenor.com/WGvvznDuGCkAAAAM/kissing-fish.gif" style= "filter: opacity(50%)"
             />
           </td>
         </tr>
